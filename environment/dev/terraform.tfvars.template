@@ -1,0 +1,18 @@
+subscription_id = ""
+tenant_id       = ""
+client_id       = ""
+client_secret   = ""
+
+
+# dev/terraform.tfvars
+
+location             = "eastus"
+storage_account_name = "uniquename" # CAMBIAR: Debe ser único globalmente
+container_name       = "tfstate" # CAMBIAR: Debe ser único dentro del Storage Account
+
+tags = {
+  Environment = "Dev"
+  Project     = "AzTfLanding"
+  ManagedBy   = "Terraform"
+
+}

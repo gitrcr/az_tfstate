@@ -3,11 +3,11 @@
 terraform {
   backend "azurerm" {
     # Apunta al RG creado por el módulo 'tfstate_rg'
-    resource_group_name  = "rg-tfstate-locked" 
-    storage_account_name = "sttfstate001" # Debe coincidir con la variable usada
+    resource_group_name  = "dev-tfstate-rg"
+    storage_account_name = "bltex63483"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
-    
+
     # No incluir credenciales aquí
   }
 }
